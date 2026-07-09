@@ -34,6 +34,4 @@ However you got JumpNDodge, always launch it via the **updater** (`updater.exe` 
 
 The updater checks GitHub for a newer version every time it starts, updates itself if one is found, and then launches JumpNDodge. This is why the installer above is a one-time download: it just sets up the updater, which then keeps the actual game current on its own. New game versions only ever add a new entry to the [versioned releases](https://github.com/erqf1/JumpNDodge/releases) — the installer isn't touched.
 
-## Source code
 
-This repository intentionally contains only compiled binaries. JumpNDodge's source code is developed in a private repository.
