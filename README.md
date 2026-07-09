@@ -1,7 +1,6 @@
 # JumpNDodge
 
-JumpNDodge is a fast-paced endless dodge/runner game. This repository hosts **compiled release downloads only** — no source code.
-
+JumpNDodge is a fast-paced endless dodge/runner game. 
 ## Downloads
 
 Grab the latest release from the [Releases page](https://github.com/erqf1/JumpNDodge/releases). Each release includes four files:
