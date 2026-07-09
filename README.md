@@ -43,6 +43,4 @@ All save data and settings stay inside that same folder, so it's easy to move, b
 
 Whether installed or portable, always launch via the **updater** (`updater.exe` / `updater`), not the game executable directly. The updater checks GitHub for a newer version on every start, updates itself if one is found, and then launches JumpNDodge — this is how you get fixes and new content without manually redownloading anything.
 
-## Source code
 
-This repository intentionally contains only compiled binaries. JumpNDodge's source code is developed in a private repository.
