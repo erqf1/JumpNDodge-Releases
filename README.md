@@ -1,38 +1,25 @@
 # JumpNDodge
 
-JumpNDodge is a fast-paced endless dodge/runner game. 
-## Downloads
+JumpNDodge is a fast-paced endless dodge/runner game. This repository hosts **compiled release downloads only** — no source code.
 
-Grab the latest release from the [Releases page](https://github.com/erqf1/JumpNDodge/releases). Each release includes four files:
+## Installing (one-time)
 
-| File | Platform | Type |
-|---|---|---|
-| `JumpNDodge-<version>-windows-installer.exe` | Windows | Installer |
-| `JumpNDodge-<version>-linux-installer.run` | Linux | Installer |
-| `JumpNDodge-<version>-windows.zip` | Windows | Portable archive |
-| `JumpNDodge-<version>-linux.zip` | Linux | Portable archive |
+Download the installer once from the **[Installer release](https://github.com/erqf1/JumpNDodge/releases/tag/installer)**:
 
-You only need **one** of these per platform: the installer for a proper setup, or the archive if you'd rather run it portably.
+| File | Platform |
+|---|---|
+| `JumpNDodge-windows-installer.exe` | Windows |
+| `JumpNDodge-linux-installer.run` | Linux |
 
-## Using the installer
+**Windows**: run the `.exe` and follow the setup wizard. Optionally check "Create a desktop icon". On finish, JumpNDodge launches automatically. This installs to Program Files, adds a Start Menu (and optional desktop) shortcut, and includes an uninstaller.
 
-**Windows** (`...-windows-installer.exe`)
-1. Run the `.exe` and follow the setup wizard.
-2. Optionally check "Create a desktop icon".
-3. On finish, JumpNDodge launches automatically.
+**Linux**: `chmod +x JumpNDodge-linux-installer.run && ./JumpNDodge-linux-installer.run`, then answer the two prompts (create desktop icon, launch now). This installs to `~/.local/share/JumpNDodge` and adds an entry to your application menu. An `uninstall.sh` is placed in the install folder for removal.
 
-This installs to Program Files, adds a Start Menu (and optional desktop) shortcut, and includes an uninstaller.
+The installer itself never changes between game versions, so you only need it once — see "Staying up to date" below for why.
 
-**Linux** (`...-linux-installer.run`)
-1. Make it executable: `chmod +x JumpNDodge-*-linux-installer.run`
-2. Run it: `./JumpNDodge-*-linux-installer.run`
-3. Answer the two prompts (create desktop icon, launch now).
+## Portable, no-install option
 
-This installs to `~/.local/share/JumpNDodge` and adds an entry to your application menu. An `uninstall.sh` is placed in the install folder for removal.
-
-## Using the portable archive
-
-The `.zip` for your platform is not just a fallback — it's a fully self-contained, portable copy of JumpNDodge. Extract it anywhere (a USB stick, any folder, wherever) and run it directly. No installation, no admin rights, no changes to your system.
+Don't want to install anything? Every [versioned release](https://github.com/erqf1/JumpNDodge/releases) also includes a portable `.zip` per platform — a fully self-contained copy of that version. Extract it anywhere (a USB stick, any folder) and run it directly. No installation, no admin rights, no changes to your system.
 
 - **Windows**: extract the zip, run `updater.exe`.
 - **Linux**: extract the zip, run `chmod +x updater JumpNDodge`, then `./updater`.
@@ -41,6 +28,12 @@ All save data and settings stay inside that same folder, so it's easy to move, b
 
 ## Starting the game
 
-Whether installed or portable, always launch via the **updater** (`updater.exe` / `updater`), not the game executable directly. The updater checks GitHub for a newer version on every start, updates itself if one is found, and then launches JumpNDodge — this is how you get fixes and new content without manually redownloading anything.
+However you got JumpNDodge, always launch it via the **updater** (`updater.exe` / `updater`), not the game executable directly.
 
+## Staying up to date
 
+The updater checks GitHub for a newer version every time it starts, updates itself if one is found, and then launches JumpNDodge. This is why the installer above is a one-time download: it just sets up the updater, which then keeps the actual game current on its own. New game versions only ever add a new entry to the [versioned releases](https://github.com/erqf1/JumpNDodge/releases) — the installer isn't touched.
+
+## Source code
+
+This repository intentionally contains only compiled binaries. JumpNDodge's source code is developed in a private repository.
